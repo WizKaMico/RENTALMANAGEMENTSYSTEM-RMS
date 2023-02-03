@@ -1,0 +1,555 @@
+/* [ YEK/SASS - VERSION : 3.1.0 ] */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/yekan-font@1.0.0/css/yekan-font.min.css");
+.visible-hidden {
+  visibility: hidden;
+}
+
+/*/ CREDIT : @YEK/SASS (https://github.com/yek-org/yek-sass) /*/
+/* __[ FONT'S ]__ */
+/* __[ VARIABLE ]__ */
+/* __[ :ROOT ]__ */
+:root {
+  --color-primary: #1a2556;
+  --color-secondary: #a5b3d4;
+  --color-gray: #dde6f3;
+  --color-light-gray: #f3f6fb;
+  --color-white: white;
+  --color-black: #3e3743;
+  --color-input-hover: rgba(165, 179, 212, 0.6);
+  --color-input-focus: rgba(26, 37, 86, 0.45);
+  --color-input-error: rgba(255, 94, 31, 0.6);
+  --color-input-warning: rgba(166, 145, 54, 0.6);
+  --color-input-success: rgba(23, 125, 23, 0.45);
+  --color-input-disabled: #dde6f3;
+  --font-family: Roboto, Montserrat, sans-serif;
+  --font-persian: Yekan, Lalezar, cursive;
+  --font-proxima: proxima-soft, Proxima Soft, Proxima Nova Soft, Helvetica, Arial, sans-serif;
+}
+
+/* __[ STYLE ]__ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: var(--font-family);
+}
+
+fieldset,
+form,
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+figcaption {
+  display: none;
+}
+
+:root {
+  --color-dark-secondary: #434956;
+  --color-norm-secondary: #3a4a6e;
+  --input-hover-shadow: 0 0 0 0.25rem var(--color-input-hover);
+  --input-focus-shadow: 0 0 0 0.25rem var(--color-input-focus);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--color-light-gray);
+  color: var(--color-secondary);
+}
+
+/* --- CONTENT --- */
+.samak {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 25px;
+  background-color: var(--color-gray);
+  overflow: hidden;
+}
+.samak__side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  transition-duration: 0.7s;
+}
+.samak__cover {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+  background-color: var(--color-gray);
+}
+.samak__image {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  filter: grayscale(30%) invert(200%) contrast(130%);
+  background-color: var(--color-primary);
+  background-color: #64779e;
+  background: linear-gradient(var(--color-primary), #64779e);
+}
+
+/* --- LOGIN --- */
+.login__header,
+.signin__header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(100% - 80px);
+  margin-bottom: 36px;
+}
+.login__header h2,
+.signin__header h2 {
+  font-size: 1.76rem;
+  font-weight: 900;
+}
+.login__title,
+.signin__title {
+  color: var(--color-primary);
+}
+.login__desc,
+.signin__desc {
+  display: inline-block;
+  color: var(--color-norm-secondary);
+}
+.login__form,
+.signin__form {
+  width: calc(100% - 60px);
+}
+.login__seprator,
+.signin__seprator {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  margin: 32px 10px 17px;
+}
+.login__seprate,
+.signin__seprate {
+  width: calc(50% - 15px);
+  height: 2px;
+  border-radius: 9px;
+  background-color: var(--color-norm-secondary);
+}
+.login__fields,
+.signin__fields {
+  letter-spacing: 1.7px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.login__field,
+.signin__field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 47px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-white);
+  margin-bottom: 32px;
+}
+.login__field:hover,
+.signin__field:hover {
+  box-shadow: var(--input-hover-shadow);
+}
+.login__field:focus,
+.signin__field:focus {
+  box-shadow: var(input-focus-shadow);
+}
+.login__field--password,
+.signin__field--password {
+  position: relative;
+}
+.login__input,
+.signin__input {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1.7px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 2ch;
+  background-color: transparent;
+}
+.login__field--password .login__input,
+.login__field--password .signin__input,
+.signin__field--password .login__input,
+.signin__field--password .signin__input {
+  padding-right: 40px;
+}
+.login__trailing,
+.signin__trailing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  right: 3px;
+  width: 36px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+.login__trailing:hover,
+.signin__trailing:hover {
+  transform: scale(1.05);
+}
+.login__trailing:active,
+.signin__trailing:active {
+  transform: scale(0.95);
+}
+.login__btn,
+.signin__btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 48px;
+  padding: 8px 16px;
+}
+.login__btn:hover,
+.signin__btn:hover {
+  transform: scale(1.05);
+}
+.login__btn:active,
+.signin__btn:active {
+  transform: scale(0.95);
+}
+.login__btn--exist, .login__btn--forgot, .login__btn--register,
+.signin__btn--exist,
+.signin__btn--forgot,
+.signin__btn--register {
+  color: var(--color-norm-secondary);
+  background-color: transparent;
+}
+.login__btn--login, .login__btn--signin,
+.signin__btn--login,
+.signin__btn--signin {
+  background-color: var(--color-primary);
+  color: var(--color-light-gray);
+}
+.login__btn--forgot, .login__btn--register,
+.signin__btn--forgot,
+.signin__btn--register {
+  width: calc(50% - 8px);
+  font-size: 0.86rem;
+}
+.login__btn--forgot:not(.login__btn--forgot:last-child, .login__btn--register:last-child,
+.signin__btn--forgot:last-child,
+.signin__btn--register:last-child), .login__btn--register:not(.login__btn--forgot:last-child, .login__btn--register:last-child,
+.signin__btn--forgot:last-child,
+.signin__btn--register:last-child),
+.signin__btn--forgot:not(.login__btn--forgot:last-child, .login__btn--register:last-child,
+.signin__btn--forgot:last-child,
+.signin__btn--register:last-child),
+.signin__btn--register:not(.login__btn--forgot:last-child, .login__btn--register:last-child,
+.signin__btn--forgot:last-child,
+.signin__btn--register:last-child) {
+  margin-right: 16px;
+}
+
+/* --- SIDE CONTROLLER --- */
+.samak__checkbox {
+  display: none;
+}
+.samak__cover {
+  right: 50%;
+}
+.samak__checkbox:checked ~ .samak__cover {
+  right: 0;
+}
+.samak__checkbox:not(:checked) ~ .samak__side--login {
+  opacity: 0;
+}
+.samak__checkbox:checked ~ .samak__side--signin {
+  opacity: 0;
+}
+
+.login__btn--exist,
+.signin__btn--exist {
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+}
+.login__btn--register,
+.signin__btn--register {
+  letter-spacing: 0;
+}
+
+/* MARK : CORNER RADIUS */
+.samak--full-round .login__field, .samak--full-round .login__input, .samak--full-round .login__btn {
+  border-radius: 25px;
+}
+
+.samak--half-round .login__field, .samak--half-round .login__input, .samak--half-round .login__btn {
+  border-radius: 16px;
+}
+
+.samak--semi-round .login__field, .samak--semi-round .login__input, .samak--semi-round .login__btn {
+  border-radius: 9px;
+}
+
+.samak--full-round .signin__field, .samak--full-round .signin__input, .samak--full-round .signin__btn {
+  border-radius: 25px;
+}
+
+.samak--half-round .signin__field, .samak--half-round .signin__input, .samak--half-round .signin__btn {
+  border-radius: 16px;
+}
+
+.samak--semi-round .signin__field, .samak--semi-round .signin__input, .samak--semi-round .signin__btn {
+  border-radius: 9px;
+}
+
+/* --- LANGUAGES --- */
+body[data-language=persian],
+body[data-language=persian] button,
+body[data-language=persian] input {
+  text-align: right;
+  font-family: "Yekan", "Lalezar", cursive !important;
+  letter-spacing: 0.3px;
+}
+body[data-language=persian] h1,
+body[data-language=persian] h2 {
+  letter-spacing: 2.1px;
+}
+body[data-language=persian] strong {
+  letter-spacing: 1.3px;
+}
+body[data-language=persian] .login__input,
+body[data-language=persian] .signin__input {
+  word-spacing: 5px;
+  letter-spacing: 0.3px;
+}
+body[data-language=persian] .login__field--password body[data-language=persian] .login__input,
+body[data-language=persian] .login__field--password body[data-language=persian] .signin__input,
+body[data-language=persian] .signin__field--password body[data-language=persian] .login__input,
+body[data-language=persian] .signin__field--password body[data-language=persian] .signin__input {
+  padding-left: 40px;
+  padding-right: 2ch;
+}
+body[data-language=persian] .login__trailing,
+body[data-language=persian] .signin__trailing {
+  left: 3px;
+}
+body[data-language=persian] .signin__desc {
+  word-spacing: 2.2px;
+  font-size: 0.9rem;
+}
+body[data-language=persian] .login__desc {
+  word-spacing: 0;
+}
+
+/* --- LANGUAGE-BOX --- */
+.setting {
+  position: fixed;
+  top: 25px;
+  left: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.setting button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  cursor: pointer;
+  width: 34px;
+  height: 35px;
+  padding: 9px;
+  border-radius: 9px;
+  background: var(--color-secondary);
+}
+.setting button:hover {
+  transform: scale(1.05);
+}
+.setting button:active {
+  transform: scale(0.95);
+}
+.setting--show .language {
+  width: 260px;
+  height: 45px;
+}
+
+.language {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 260px;
+  height: 0;
+  border-radius: 9px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  box-shadow: 0 0 0.6rem var(--color-secondary);
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+.language legend {
+  position: absolute;
+}
+.language__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  stroke: none;
+  box-shadow: none;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+  padding: 6px 10px;
+  color: var(--color-primary);
+}
+.language input[type=radio] {
+  display: none;
+}
+.language input[type=radio]:checked + label {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-size: bold;
+}
+
+/* --- RESPONSIVITY --- */
+@media screen and (max-width: 715px) {
+  .samak {
+    width: 90%;
+  }
+  .samak__side {
+    width: 100%;
+    height: 100%;
+  }
+  .samak__side--login {
+    margin-top: -500px;
+  }
+  .samak__cover {
+    display: none;
+  }
+  .samak__checkbox:checked ~ .samak__side--login {
+    margin-top: 500px;
+  }
+  .samak__checkbox:not(:checked) ~ .samak__side--login {
+    opacity: 0;
+  }
+  .samak__checkbox:checked ~ .samak__side--signin {
+    opacity: 0;
+  }
+}
